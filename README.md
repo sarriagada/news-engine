@@ -34,3 +34,9 @@ Dependencies:
 `git push heroku-staging main`
 
 show on https://newsengine.herokuapp.com/
+
+`heroku logs --tail` to show logs
+
+`heroku run rails console` to use the console
+
+`heroku run rake db:migrate` to run migrations
