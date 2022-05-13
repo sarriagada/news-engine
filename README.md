@@ -10,6 +10,7 @@ Dependencies:
 * System dependencies
 
 * Configuration
+
 `git clone git@github.com:sarriagada/news-engine.git`
 
 `bundle install`
@@ -21,6 +22,7 @@ Dependencies:
 * Database initialization
 
 * Run server on http://localhost:3000/
+
 `rails s`
 
 * How to run the test suite
@@ -29,3 +31,6 @@ Dependencies:
 
 * Deployment instructions
 
+`git push heroku-staging main`
+
+show on https://newsengine.herokuapp.com/
