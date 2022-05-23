@@ -15,6 +15,9 @@ Dependencies:
 
 `bundle install`
 
+* Env config
+copy the content on `.env-sample` to a new file named `.env`
+
 * Database initialization
 `docker compose up`
 
