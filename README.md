@@ -15,11 +15,12 @@ Dependencies:
 
 `bundle install`
 
+* Database initialization
+`docker compose up`
+
 * Database creation
 
 `rails db:setup`
-
-* Database initialization
 
 * Run server on http://localhost:3000/
 
