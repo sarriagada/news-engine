@@ -5,24 +5,31 @@ News Engine bootcamp project
 Dependencies:
 
 * Ruby version
-3.0.2
+3.1.2
+
+* Rails version
+7.0.3
 
 * System dependencies
 
 * Configuration
 clone the repo
+
 `git clone git@github.com:sarriagada/news-engine.git`
 
 move to the new folder
+
 `cd news-engine`
 
 install the dependencies
+
 `bundle install`
 
 * Env config
 copy the content on `.env-sample` to a new file named `.env`
 
 * Database initialization
+
 `docker compose up`
 
 * Database creation
