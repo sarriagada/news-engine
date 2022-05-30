@@ -10,9 +10,13 @@ Dependencies:
 * System dependencies
 
 * Configuration
-
+clone the repo
 `git clone git@github.com:sarriagada/news-engine.git`
 
+move to the new folder
+`cd news-engine`
+
+install the dependencies
 `bundle install`
 
 * Env config
