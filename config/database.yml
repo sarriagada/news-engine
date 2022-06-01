@@ -27,10 +27,9 @@ development:
 
 test:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= "#{ENV['DATABASE_URL']}_test" %>
 
 production:
   <<: *default
   #sslmode: require
-  url: <%= ENV['DATABASE_URL'] %>
-
+  url: <%= "#{ENV['DATABASE_URL']}_prod" %>
