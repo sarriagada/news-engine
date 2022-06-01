@@ -42,6 +42,8 @@ copy the content on `.env-sample` to a new file named `.env`
 
 * How to run the test suite
 
+`rails test`
+
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
