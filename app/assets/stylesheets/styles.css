@@ -1,0 +1,49 @@
+html{
+	background-color: #e5e5e5;
+}
+.card{
+	position: absolute;
+	width: 192px;
+	height: 132px;
+	top: 65px;
+	background: #FFFFFF;
+	border-radius: 19px;
+}
+
+.card-1{
+	left: 291px;
+}
+
+.card-2{
+	left: 513px;
+}
+
+.card-3{
+	left: 735px;
+}
+
+.card-4{
+	left: 957px;
+}
+
+/* Engine News */
+h1{
+text-align: center;
+position: absolute;
+width: 105px;
+height: 21px;
+top: 19px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+left: 666px;
+
+/* identical to box height */
+
+color: #0768B5;
+
+}
+
+
