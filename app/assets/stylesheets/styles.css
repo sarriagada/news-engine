@@ -1,18 +1,18 @@
 html{
-	background-color: #e5e5e5;
+	background-color: #f5f5f5;
 }
 .card{
 width: 192px;
 height: 132px;
-top: 65px;
+margin-top: 25px;
 background: #FFFFFF;
 border-radius: 19px;
 }
 
 h1{
 height: 21px;
-top: 19px;
-font-family: 'Roboto';
+margin-top: 26px;
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -22,9 +22,9 @@ color: #0768B5;
 }
 
 .title{
-Font-family: Poppins;
-Font-style: Medium;
-Font-size: 14px;
+font-family: 'Poppins', sans-serif;
+font-style: Medium;
+font-size: 14px;
 line-height: 20px;
 line-height: 95%;
 text-align: left;
@@ -34,7 +34,7 @@ font-weight: 500;
 
 .subtitle{
 height: 16px;
-font-family: 'Poppins';
+font-family: 'Poppins', sans-serif;
 font-weight: 400;
 font-size: 12px;
 line-height: 16px;
@@ -42,31 +42,28 @@ color: #787A8D;
 }
 
 .image{
-	width: 36px;
+width: 36px;
 }
 
 .button{
-width: 96px;
 height: 30px;
 background: #FFFFFF;
 border: 0.2px solid #FFFFFF;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
-border-radius: 20px;
-margin-right: 19px;
 margin-top: 26px;
+margin-right: 19px;
 }
 
 .button:hover{
-	background-color: #2F9FF8;
-	color: #ffffff;
-	transition: 0.5s;
+background-color: #2F9FF8;
+color: #ffffff;
+transition: 0.5s;
 }
 
 h2{
 height: 23px;
 left: 334px;
-top: 223px;
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -74,3 +71,119 @@ line-height: 23px;
 color: #072D4B;
 margin-top: 26px;
 }
+
+h3{
+width: 530.32px;
+height: 20px;
+left: 357.46px;
+top: 333px;
+font-family: 'Roboto', sans-serif;
+font-style: bold;
+font-weight: 700;
+font-size: 17px;
+line-height: 20px;
+color: #072D4B;
+}	
+
+.news{
+padding-left: 180px;
+}
+
+.details{
+width: 510.94px;
+height: 61px;
+top: 363px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #072D4B;
+opacity: 0.6;
+margin-right: 20px;
+}
+
+.rectangle{
+background-color: #ffffff;
+padding: 15px;
+border-radius: 4px;
+left: 334px;
+}
+
+
+.f22{
+width: 172.35px;
+height: 130px;
+left: 917.35px;
+top: 333px;
+border-radius: 4px;
+}
+
+.small-rectangle{
+width: 376px;
+height: 191px;
+left: 729px;
+top: 500px;
+background: #FFFFFF;
+box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+margin: 5px;
+}
+
+.description{
+width: 179.87px;
+height: 65px;
+left: 357.37px;
+top: 571px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #072D4B;
+opacity: 0.6;
+}
+
+.card-title{
+width: 182.92px;
+height: 45px;
+left: 357.37px;
+top: 517px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+color: #072D4B;
+margin: 0;
+}
+
+.card-image{
+width: 134.14px;
+height: 132px;
+border-radius: 4px;
+}
+
+.description-1{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #072D4B;
+opacity: 0.6;
+}
+
+.card-title-2{
+width: 334.34px;
+height: 45px;
+left: 357.37px;
+top: 728px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+color: #072D4B;
+}
+
