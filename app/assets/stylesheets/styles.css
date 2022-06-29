@@ -1,5 +1,5 @@
 html{
-background-color: rosybrown;
+background-color: #f5f5f5;
 }
 .container{
 max-width: 771px !important; 
@@ -110,19 +110,14 @@ border-radius: 4px;
 }
 
 .small-rectangle{
-width: 376px;
 height: 191px;
-top: 500px;
 background: #FFFFFF;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
 border-radius: 4px;
+padding: 15px;
 }
 
 .description{
-width: 179.87px;
-height: 65px;
-left: 357.37px;
-top: 571px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -133,22 +128,16 @@ opacity: 0.6;
 }
 
 .card-title{
-width: 182.92px;
 height: 45px;
-left: 357.37px;
-top: 517px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 17px;
 line-height: 24px;
 color: #072D4B;
-margin: 0;
 }
 
 .card-image{
-width: 134.14px;
-height: 132px;
 border-radius: 4px;
 }
 
@@ -173,7 +162,6 @@ color: #072D4B;
 }
 
 .src-date{
-height: 22px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -185,7 +173,6 @@ opacity: 0.4;
 
 .vector-text{
 height: 22px;
-top: 441px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -199,12 +186,6 @@ width: 16px;
 height: 16px;
 }
 
-.footer{
-width: 550px;
-height: 46px;
-padding: 0;
-background-color: transparent;
-}
 
 .percentage{
 width: 33px;
@@ -215,10 +196,6 @@ font-weight: 400;
 font-size: 12px;
 line-height: 16px;
 color: #4766F9;
-}
-
-.icon{
-margin-bottom: 5px;
 }
 
 .value{
