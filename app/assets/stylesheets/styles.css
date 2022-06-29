@@ -1,15 +1,14 @@
 html{
 	background-color: #f5f5f5;
 }
+.container{
+	max-width: 771px !important; 
+}
 
 .card{
-width: 192px;
 height: 132px;
-margin-top: 25px;
 background: #FFFFFF;
 border-radius: 19px;
-margin-right: auto;
-margin-left: auto;
 }
 
 h1{
@@ -53,7 +52,6 @@ height: 30px;
 background: #FFFFFF;
 border: 0.2px solid #FFFFFF;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
-margin-top: 26px;
 margin-right: 19px;
 }
 
@@ -76,7 +74,7 @@ margin-top: 26px;
 }
 
 h3{
-width: 530.32px;
+width: 550px;
 height: 20px;
 left: 357.46px;
 top: 333px;
@@ -99,18 +97,14 @@ font-size: 14px;
 line-height: 22px;
 color: #072D4B;
 opacity: 0.6;
-margin-right: 20px;
+margin-right: 10px;
 }
 
 .rectangle{
 background-color: #ffffff;
 padding: 15px;
 border-radius: 4px;
-left: 334px;
 width: 100%;
-margin-right: auto;
-margin-left: auto;
-width: 771px;
 }
 
 
@@ -125,12 +119,10 @@ border-radius: 4px;
 .small-rectangle{
 width: 376px;
 height: 191px;
-left: 729px;
 top: 500px;
 background: #FFFFFF;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
 border-radius: 4px;
-margin: 5px;
 }
 
 .description{
@@ -166,9 +158,6 @@ width: 134.14px;
 height: 132px;
 border-radius: 4px;
 }
-
-
-
 
 .description-1{
 font-family: 'Roboto';
@@ -217,15 +206,15 @@ color: #0768B5;
 }
 
 .vector{
-	width: 16px;
-	height: 16px;
+width: 16px;
+height: 16px;
 }
 
 .footer{
-	width: 335px;
-	height: 46px;
-	padding: 0;
-	background-color: transparent;
+width: 550px;
+height: 46px;
+padding: 0;
+background-color: transparent;
 }
 
 .percentage{
@@ -240,7 +229,7 @@ color: #4766F9;
 }
 
 .icon{
-	margin-bottom: 5px;
+margin-bottom: 5px;
 }
 
 .value{
@@ -253,8 +242,4 @@ font-weight: 500;
 font-size: 20px;
 line-height: 20px;
 color: #1E1F4B;
-}
-
-.main-news{
-	width: 771px;
 }
