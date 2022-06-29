@@ -1,8 +1,8 @@
 html{
-	background-color: #f5f5f5;
+background-color: rosybrown;
 }
 .container{
-	max-width: 771px !important; 
+max-width: 771px !important; 
 }
 
 .card{
@@ -53,6 +53,7 @@ background: #FFFFFF;
 border: 0.2px solid #FFFFFF;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
 margin-right: 19px;
+margin-top: 10px;
 }
 
 .button:hover{
@@ -74,10 +75,7 @@ margin-top: 26px;
 }
 
 h3{
-width: 550px;
 height: 20px;
-left: 357.46px;
-top: 333px;
 font-family: 'Roboto', sans-serif;
 font-style: bold;
 font-weight: 700;
@@ -87,7 +85,6 @@ color: #072D4B;
 }	
 
 .details{
-width: 510.94px;
 height: 61px;
 top: 363px;
 font-family: 'Roboto', sans-serif;
@@ -104,15 +101,11 @@ margin-right: 10px;
 background-color: #ffffff;
 padding: 15px;
 border-radius: 4px;
-width: 100%;
 }
-
 
 .f22{
 width: 172.35px;
 height: 130px;
-left: 917.35px;
-top: 333px;
 border-radius: 4px;
 }
 
@@ -170,10 +163,7 @@ opacity: 0.6;
 }
 
 .card-title-2{
-width: 334.34px;
 height: 45px;
-left: 357.37px;
-top: 728px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -184,7 +174,6 @@ color: #072D4B;
 
 .src-date{
 height: 22px;
-top: 441px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
