@@ -125,6 +125,10 @@ font-size: 14px;
 line-height: 22px;
 color: #072D4B;
 opacity: 0.6;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
 }
 
 .card-title{
@@ -135,30 +139,14 @@ font-weight: 700;
 font-size: 17px;
 line-height: 24px;
 color: #072D4B;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
 }
 
 .card-image{
 border-radius: 4px;
-}
-
-.description-1{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-color: #072D4B;
-opacity: 0.6;
-}
-
-.card-title-2{
-height: 45px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-color: #072D4B;
 }
 
 .src-date{
