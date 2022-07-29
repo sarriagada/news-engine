@@ -7,10 +7,10 @@
     <% @articles.each do |article| %>
       <%= render article %>
       <p>
-        <%= link_to "Show this article", article %>
+        <%= link_to "Show this article", admin_article_path(article)  %>
       </p>
     <% end %>
   </div>
 
-  <%= link_to "New article", new_article_path %>
+  <%= link_to "New article", new_admin_article_path %>
 </section>
