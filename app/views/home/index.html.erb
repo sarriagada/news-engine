@@ -3,6 +3,13 @@
     <%= render partial: 'prices'%>
     <%= render partial: 'filter'%>
     <%= render partial: 'news'%>
+
+    <% @articles.each do |article| %>
+      <%= render article %>
+      <p>
+        <%= link_to "Show this article", admin_article_path(article)  %>
+      </p>
+    <% end %>
 </div>
 
 
