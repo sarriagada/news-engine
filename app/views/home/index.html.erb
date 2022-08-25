@@ -5,7 +5,9 @@
     <%= render partial: 'news'%>
 
     <% @articles.each do |article| %>
-      <%= render article %>
+      <h1>
+      <%= article.title %>
+      </h1>          
       <p>
         <%= link_to "Show this article", admin_article_path(article)  %>
       </p>
