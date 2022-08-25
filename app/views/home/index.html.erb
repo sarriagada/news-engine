@@ -4,15 +4,44 @@
     <%= render partial: 'filter'%>
     <%= render partial: 'news'%>
 
-    <% @articles.each do |article| %>
-      <h1>
-      <%= article.title %>
-      </h1>          
-      <p>
-        <%= link_to "Show this article", admin_article_path(article)  %>
-      </p>
+    <% @articles.each do |article| %>         
+      <div class="columns">
+        <div class="column is-half">
+          <div class="small-rectangle">
+            <div class="columns is-mobile">
+              <div class="column">
+                <h3 class="card-title mb-3"><%= article.title %></h3>
+                <p class="description"><%= article.body %></p>
+              </div>
+              <div class="column is-narrow">
+                <div class="card-image">
+                <%= image_tag 'battlegrounds.svg'%>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-mobile">
+              <div class="column pt-0">
+                <p class="src-date"><%= article.source %></p>
+              </div>
+              <div class="column pt-0">
+                <div class="is-flex">
+                  <div class="is-flex">
+                    <div class="vector">
+                      <%= image_tag 'share.svg'%>          
+                    </div>
+                    <p class="vector-text ml-2 mr-4">Share</p>
+                  </div>
+                  <div class="is-flex">
+                    <div class="vector">
+                      <%= image_tag 'pocket.svg'%>          
+                    </div>
+                    <p class="vector-text ml-2">Read Later</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
     <% end %>
 </div>
-
-
-
