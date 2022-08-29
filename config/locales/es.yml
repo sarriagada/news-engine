@@ -1,0 +1,12 @@
+es:
+  common:
+    admin:
+      articles:
+        create: 
+          created: 'Articulo creado exitosamente'
+        update:
+          updated: 'Articulo actualizado exitosamente'
+        destroy:
+          destroyed: 'Articulo eliminado exitosamente'
+
+

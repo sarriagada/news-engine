@@ -72,146 +72,43 @@
     </div> 
   </div>
 </div>
-<div class="columns">
-  <div class="column is-half">
-    <div class="small-rectangle">
-      <div class="columns is-mobile">
-        <div class="column">
-          <h3 class="card-title mb-3">Battlegrounds Mobile India iOS release date</h3>
-          <p class="description">The reason behind their disappointment is that iPhone users have been..</p>
-        </div>
-        <div class="column is-narrow">
-          <div class="card-image">
-          <%= image_tag 'battlegrounds.svg'%>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-mobile">
-        <div class="column pt-0">
-          <p class="src-date">Sport Biz - 42 mins ago</p>
-        </div>
-        <div class="column pt-0">
-          <div class="is-flex">
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'share.svg'%>          
+<div class="columns is-multiline">
+    <% @articles.each do |article| %>         
+        <div class="column is-half">
+          <div class="small-rectangle">
+            <div class="columns is-mobile">
+              <div class="column">
+                <h3 class="card-title mb-3"><%= article.title %></h3>
+                <p class="description"><%= article.body %></p>
               </div>
-              <p class="vector-text ml-2 mr-4">Share</p>
-            </div>
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'pocket.svg'%>          
+              <div class="column is-narrow">
+                <div class="card-image">
+                <%= image_tag 'battlegrounds.svg'%>
+                </div>
               </div>
-              <p class="vector-text ml-2">Read Later</p> 
             </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-  <div class="column is-half">
-    <div class="small-rectangle">
-      <div class="columns is-mobile">
-        <div class="column">
-          <h3 class="card-title mb-3">Instagram working on ‘Exclusive Stories’ for subscribers</h3>
-          <p class="description">Instagram could be jumping on the paid subscription..</p>
-        </div>
-        <div class="column is-narrow">
-          <div class="card-image">
-          <%= image_tag 'instagram.svg'%>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-mobile">
-        <div class="column pt-0">
-          <p class="src-date">The Mint - 52 mins ago</p>
-        </div>
-        <div class="column pt-0">
-          <div class="is-flex">
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'share.svg'%>          
+            <div class="columns is-mobile">
+              <div class="column pt-0">
+                <p class="src-date"><%= article.source %></p>
               </div>
-              <p class="vector-text ml-2 mr-4">Share</p>
-            </div>
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'pocket.svg'%>          
+              <div class="column pt-0">
+                <div class="is-flex">
+                  <div class="is-flex">
+                    <div class="vector">
+                      <%= image_tag 'share.svg'%>          
+                    </div>
+                    <p class="vector-text ml-2 mr-4">Share</p>
+                  </div>
+                  <div class="is-flex">
+                    <div class="vector">
+                      <%= image_tag 'pocket.svg'%>          
+                    </div>
+                    <p class="vector-text ml-2">Read Later</p> 
+                  </div>
+                </div>
               </div>
-              <p class="vector-text ml-2">Read Later</p> 
             </div>
-          </div>
+          </div>  
         </div>
-      </div>
-    </div>  
-  </div>
-</div>
-<div class="columns">
-  <div class="column is-half">
-    <div class="small-rectangle">
-      <div class="columns is-mobile">
-        <div class="column">
-          <h3 class="card-title mb-4">Petrol, diesel prices -  July 6: Fuel prices unchanged after touching record high</h3>
-          <p class="description">The price of petrol remained unchanged on July 6 after reaching a new record high on the previous day, according to a price notification by state-owned..</p>
-        </div>
-      </div>
-      <div class="columns is-mobile">
-        <div class="column">
-          <p class="src-date">The Mint - 52 mins ago</p>
-        </div>
-        <div class="column">
-          <div class="is-flex">
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'share.svg'%>          
-              </div>
-              <p class="vector-text ml-2 mr-4">Share</p>
-            </div>
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'pocket.svg'%>          
-              </div>
-              <p class="vector-text ml-2">Read Later</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-  <div class="column is-half">
-    <div class="small-rectangle">
-      <div class="columns is-mobile">
-        <div class="column">
-          <h3 class="card-title mb-3">Android smartphone users alert! Remove these 9 apps now</h3>
-          <p class="description">Stealer trojans were spread as harmless software..</p>
-        </div>
-        <div class="column is-narrow">
-          <div class="card-image pb-0">
-          <%= image_tag 'android.svg'%>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-mobile">
-        <div class="column pt-0 pb-0">
-          <p class="src-date">Live Mint - 2 hours ago</p>
-        </div>
-        <div class="column pt-0 pb-0">
-          <div class="is-flex">
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'share.svg'%>          
-              </div>
-              <p class="vector-text ml-2 mr-4">Share</p>
-            </div>
-            <div class="is-flex">
-              <div class="vector">
-                <%= image_tag 'pocket.svg'%>          
-              </div>
-              <p class="vector-text ml-2">Read Later</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-</div>
+    <% end %>
+ </div>
