@@ -47,10 +47,11 @@ class Admin::ArticlesController < AdminController
 
   # DELETE /articles/1 or /articles/1.json
   def destroy
+    @article = Article.find(params[:id])
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_articles_url, notice: t(".destroyed") }
+      format.html { redirect_to articles_url }
       format.json { head :no_content }
     end
   end
