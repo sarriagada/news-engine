@@ -32,9 +32,9 @@
             </div>
             <div class="field-body">
               <div class="field">
-                <p class="control is-expanded has-icons-left">
+                <p class="control is-expanded">
                   <%= form.text_field :title, class:'input'%>
-                  <span class="icon is-small is-left"><i class="mdi mdi-account"></i></span>
+                  <span class="icon is-small is-left"></span>
                 </p>
               </div>
             </div>
@@ -70,10 +70,10 @@
             </div>
             <div class="field-body">
               <div class="field is-horizontal">
-                <div class="field-label"><label class="label"></label></div>
                 <div class="field-body">
                   <div class="field">
-                    <label class="checkbox"><input type="checkbox"> Featured </label>
+                    <%= form.check_box :active, class:"custom-control-input switch", id: "customSwitch1" %>
+                    <label class="custom-control-label" for="customSwitch1"><strong>Featured</strong></label>
                   </div>
                 </div>
               </div>
@@ -97,6 +97,11 @@
     </div>
   </section>
 <% end %>
+
+
+        
+
+
 
 
 
