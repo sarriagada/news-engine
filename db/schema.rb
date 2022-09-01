@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_29_174527) do
     t.string "source"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "featured", default: false
   end
 
 end

@@ -54,9 +54,8 @@
                         <th>Body</th>
                         <th>Source</th>
                         <th>Created</th>
-                        <th>Featured</th>
+                        <th>Category</th>
                         <th></th>
-
                       </tr>
                     </thead>
                     <tbody>
@@ -79,17 +78,13 @@
                           <td data-label="Created">
                             <small class="has-text-grey is-abbr-like" title="Oct 25, 2020">Oct 25, 2020</small>
                           </td>
-                          <td><div class="field is-horizontal">
-                            <div class="field-label"><label class="label"></label></div>
-                            <div class="field-body">
-                              <div class="field">
-                                <label class="switch is-rounded"><input type="checkbox" value="false">
-                                  <span class="check"></span>
-                                  <span class="control-label"></span>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
+                          <td>
+                            <% if article.featured %>
+                                <p><strong class="has-text-primary">Featured</strong></p>
+                            <% else %>
+                                <p><strong class="has-text-grey ">Standard</strong></p>
+
+                            <% end %>
                           </td> 
                           <td class="is-actions-cell">
                             <div class="buttons is-right">
@@ -145,8 +140,6 @@
           <button class="modal-close is-large jb-modal-close" aria-label="close"></button>
         </div>
       </div>
-
-  
 </section>
 
 

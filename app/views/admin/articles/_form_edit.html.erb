@@ -11,22 +11,92 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div>
-    <%= form.label :source, style: "display: block" %>
-    <%= form.text_field :source %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+  <section class="hero is-hero-bar">
+    <div class="hero-body">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item"><h1 class="title">
+            Editing Article
+          </h1></div>
+        </div>
+        <div class="level-right" style="display: none;">
+          <div class="level-item"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-main-section">
+    <div class="card">
+      <div class="card-content">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Title</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded">
+                  <%= form.text_field :title, class:'input'%>
+                  <span class="icon is-small is-left"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Body</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <%= form.text_area :body, class:'textarea' %>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Source</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <%= form.text_field :source, class: 'input' %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <!-- Left empty for spacing -->
+            </div>
+            <div class="field-body">
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <%= form.check_box :featured %>
+                    <label class="custom-control-label" for="customSwitch1"><strong>Featured</strong></label>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button type="submit" class="button is-primary">
+                      <span>Edit this article</span>
+                    </button>
+                  </div>
+                  <div class="control">
+                    <button type="button" class="button is-primary is-outlined">
+                      <%= link_to "Back to articles", admin_articles_path, class:'has-text-primary' %>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
 <% end %>
+
