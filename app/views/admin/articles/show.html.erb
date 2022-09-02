@@ -4,13 +4,16 @@
   <div class="box mt-5">
     <%= render @article %>
     <div class="buttons mt-4">
-      <button class="button is-primary"><%= link_to "Edit this article", edit_admin_article_path(@article), class: "has-text-white" %></button>
-      <button class="button is-primary is-outlined"><%= link_to "Back to articles", admin_articles_path, class:'has-text-primary' %></button>
-      <button class="button is-danger"><%= link_to "Destroy this article", admin_articles_path(@article), data: { turbo_method: :delete , turbo_confirm: "Are you sure?"}, class: "has-text-white" %>
-      </button>
+      <%= link_to "Edit this article", edit_admin_article_path(@article), class: "button is-primary has-text-white" %>
+      <%= link_to "Back to articles", admin_articles_path, class: "button is-primary is-outlined has-text-primary"  %>
+      <%= button_to "Destroy this article", admin_article_path(@article), method: :delete, :class => 'button is-danger has-text-white'%>
     </div>
   </div>
 </div>
+
+
+
+
 
 
 

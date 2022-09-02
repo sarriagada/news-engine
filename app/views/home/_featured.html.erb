@@ -1,0 +1,39 @@
+<% @featured.each do |featured| %>  
+  <div class="rectangle is-hidden-touch mb-3">
+    <div class="columns is-mobile">
+      <div class="column">
+        <h3 class="mb-2"><%= featured.title %></h3>
+        <p class="details"><%= featured.body %></p>
+        <div class="columns mt-3 is-mobile">
+          <div class="column">
+            <div class="is-flex is-justify-content-space-between">
+              <p class="src-date"><%= featured.source %></p>
+              <p class="src-date"><%= Time.zone.now.to_formatted_s(:short) %></p>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="is-flex">
+              <div class="is-flex">
+                <div class="vector">
+                  <%= image_tag 'share.svg'%>          
+                </div>  
+                <p class="vector-text ml-2">Share</p>
+              </div>
+              <div class="is-flex ml-3">
+                <div class="vector">
+                  <%= image_tag 'pocket.svg'%>          
+                </div>
+                <p class="vector-text ml-2">Read Later</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-narrow">
+        <div class="f22">
+          <%= image_tag 'F22.svg'%>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

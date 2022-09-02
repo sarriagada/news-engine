@@ -20,7 +20,6 @@ class Admin::ArticlesController < AdminController
   # POST /articles or /articles.json
   def create
     @article = Article.new(article_params)
-
     respond_to do |format|
       if @article.save
         format.html { redirect_to admin_article_url(@article), notice: t(".created") }
@@ -36,7 +35,7 @@ class Admin::ArticlesController < AdminController
   def update
     respond_to do |format|
       if @article.update(article_params)
-        format.html { redirect_to admin_article_url(@article), notice: t(".updated") }
+        format.html { redirect_to admin_article_path(@article), notice: t(".updated") }
         format.json { render :show, status: :ok, location: @article }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +50,7 @@ class Admin::ArticlesController < AdminController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to articles_url }
+      format.html { redirect_to admin_articles_path }
       format.json { head :no_content }
     end
   end
