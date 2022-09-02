@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @articles = Article.all
+    @featured = Article.featured
+    @articles = Article.featured(false)
   end
 end

@@ -20,7 +20,6 @@ class Admin::ArticlesController < AdminController
   # POST /articles or /articles.json
   def create
     @article = Article.new(article_params)
-
     respond_to do |format|
       if @article.save
         format.html { redirect_to admin_article_url(@article), notice: t(".created") }
@@ -36,7 +35,7 @@ class Admin::ArticlesController < AdminController
   def update
     respond_to do |format|
       if @article.update(article_params)
-        format.html { redirect_to admin_article_url(@article), notice: t(".updated") }
+        format.html { redirect_to admin_article_path(@article), notice: t(".updated") }
         format.json { render :show, status: :ok, location: @article }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -47,10 +46,11 @@ class Admin::ArticlesController < AdminController
 
   # DELETE /articles/1 or /articles/1.json
   def destroy
+    @article = Article.find(params[:id])
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_articles_url, notice: t(".destroyed") }
+      format.html { redirect_to admin_articles_path }
       format.json { head :no_content }
     end
   end
@@ -64,6 +64,6 @@ class Admin::ArticlesController < AdminController
 
   # Only allow a list of trusted parameters through.
   def article_params
-    params.require(:article).permit(:title, :body, :source)
+    params.require(:article).permit(:title, :body, :source, :featured)
   end
 end
