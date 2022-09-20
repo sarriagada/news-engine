@@ -5,9 +5,9 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     @article = articles(:one)
   end
 
-  test "should get index" do
-    get admin_articles_url
-    assert_response :success
+  test "should redirect if not logged in" do 
+    get admin_root_path
+    assert_redirected_to login_path
   end
 
   test "should get new" do
