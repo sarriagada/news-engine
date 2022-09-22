@@ -43,11 +43,11 @@ line-height: 16px;
 color: #787A8D;
 }
 
-.image{
+.small-image{
 width: 36px;
 }
 
-.button{
+.pill{
 height: 30px;
 background: #FFFFFF;
 border: 0.2px solid #FFFFFF;
@@ -56,7 +56,7 @@ margin-right: 19px;
 margin-top: 10px;
 }
 
-.button:hover{
+.pill:hover{
 background-color: #2F9FF8;
 color: #ffffff;
 transition: 0.5s;
@@ -198,14 +198,25 @@ line-height: 20px;
 color: #1E1F4B;
 }
 
-.control-me {
-  display: none;
-}
-
-#toggle:checked ~ .control-me {
-  display: block;
-}
-
 #alert {
   color: red;
+}
+
+.big-card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: hsl(0deg, 0%, 29%);
+  max-width: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.big-title {
+  color: hsl(0deg, 0%, 21%);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
 }

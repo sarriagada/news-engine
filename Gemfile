@@ -81,3 +81,5 @@ gem "rubocop-rspec", require: false
 gem "simplecov", require: false, group: :test
 
 gem "sorcery", "~> 0.16.3"
+
+gem "htmlbeautifier", "~> 1.4"

@@ -1,10 +1,61 @@
-<p style="color: green"><%= notice %></p>
+<section class="hero is-hero-bar">
+  <div class="hero-body">
+    <div class="level">
+      <div class="level-left">
+        <div class="level-item"><h1 class="big-title">
+          Profile
+        </h1></div>
+      </div>
+      <div class="level-right" style="display: none;">
+        <div class="level-item"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section is-main-section">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent is-justify-content-center">
+      <div class="big-card tile is-child">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="mdi mdi-account default"></i></span>
+            Profile
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="is-user-avatar image has-max-width is-aligned-center">
+            <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="John Doe">
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label">E-mail</label>
+            <div class="control is-clearfix">
+              <input type="text" readonly value=<%= current_user.email %>, class="input is-static">
+            </div>
+          </div>
+          <hr>
+          <div class="field">
+            <label class="label">Crypted Password</label>
+            <div class="control is-clearfix">
+              <input type="text" readonly value=<%= current_user.crypted_password %>, class="input is-static">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Salt</label>
+            <div class="control is-clearfix">
+              <input type="text" readonly value=<%= current_user.salt %>, class="input is-static">
+            </div>
+          </div>
+          <hr>
+          <div class="is-flex is-justify-content-space-evenly">  
+            <%= link_to "Edit this user", edit_user_path(@user), class: 'button is-primary' %>
+            <%= link_to "Back to users", users_path, class: 'button is-outlined is-primary' %>
+            <%= button_to "Destroy this user", @user, method: :delete, class:'button is-danger has-text-white'%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
-</div>
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
