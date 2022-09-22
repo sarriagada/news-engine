@@ -220,3 +220,14 @@ color: #1E1F4B;
   font-weight: 600;
   line-height: 1.125;
 }
+
+.cardxl {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: hsl(0deg, 0%, 29%);
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
