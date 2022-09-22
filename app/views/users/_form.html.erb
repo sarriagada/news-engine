@@ -22,19 +22,16 @@
           </header>
           <div class="card-content">
             <form>
-              <div class="field is-horizontal is-align-items-center">
-                <div class="field-label is-normal"><label class="label">Avatar</label></div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Avatar</label>
+                </div>
                 <div class="field-body">
                   <div class="field">
-                    <div class="field file">
-                      <label class="upload control">
-                        <a class="button is-primary">
-                          <span class="icon"><i class="mdi mdi-upload default"></i></span>
-                          <span>Pick a file</span>
-                        </a>
-                        <input type="file">
-                      </label>
+                    <div class="control">
+                      <%= form.file_field :avatar %>
                     </div>
+                    <p class="help">Your e-mail is required</p>
                   </div>
                 </div>
               </div>

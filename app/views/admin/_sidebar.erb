@@ -1,12 +1,15 @@
 <aside class="aside is-placed-left is-expanded">
   <div class="aside-tools">
-    <div class="aside-tools-label">
-      <span>News Engine</span>
-    </div>
+    
   </div>
   <div class="menu is-menu-main">
-    <p class="menu-label">General</p>
+    <p class="menu-label"><%= current_user.email %></p>
     <ul class="menu-list">
+      <li>
+        <div class="is-user-avatar image has-max-width is-aligned-center mb-5">
+          <%= image_tag current_user.avatar %>
+        </div>
+      </li>
       <li>
         <%= link_to admin_root_path, class:"router-link-active has-icon #{'is-active' if current_page?(admin_root_path)}" do %>
           <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
@@ -18,6 +21,18 @@
           <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
           <span class="menu-item-label">Articles</span>
         <%end%>
+      </li>
+      <li>
+        <%= link_to current_user, class:"router-link-active has-icon #{'is-active' if current_page?(current_user)}" do %>
+          <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+          <span class="menu-item-label">Profile</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to :logout, data: { turbo_method: :post } do %>
+          <span class="icon"><i class="mdi mdi-logout"></i></span>
+          <span class="menu-item-label">Logout</span>
+        <% end %>
       </li>
     </ul>
   </div>
