@@ -9,3 +9,13 @@ en:
         destroyed: 'Articulo eliminado exitosamente'
 
 
+en:
+  common:  
+    user:
+      create:
+        created: 'Usuario creado exitosamente'
+      update:
+        updated: 'Usuario actualizado exitosamente'
+      destroy:
+        destroyed: 'Usuario destruido exitosamente'
+  

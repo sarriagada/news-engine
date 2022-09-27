@@ -1,0 +1,72 @@
+<%= form_with url: login_path, method: :post do |f| %>
+<section class="is-title-bar">
+  <section class="hero is-hero-bar">  
+    <div class="hero-body">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item"><h1 class="big-title">Sign In</h1></div>
+        </div>
+        <div class="level-right" style="display: none;">
+          <div class="level-item"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-main-section">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-flex is-justify-content-center">
+        <div class="big-card tile is-child">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
+              Login
+            </p>
+          </header>
+          <div class="card-content">
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">E-mail</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= f.text_field :email, class:'input' %>
+                    </div>
+                    <p class="help">Your e-mail is required</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Password</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= f.password_field :password, class:'input' %>
+                    </div>
+                    <p class="help">Your password is required</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= f.submit "Sign In", class:'button is-primary' %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section> 
+<% end %>
+<%= link_to 'Back', users_path %>

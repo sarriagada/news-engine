@@ -4,6 +4,7 @@ one:
   title: MyString
   body: MyText
   source: MyString
+ 
 
 two:
   title: MyString

@@ -1,0 +1,97 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div id="app">
+  <section class="section is-main-section has-content-center">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-flex is-justify-content-center">
+        <div class="big-card tile is-child">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
+              New User
+            </p>
+          </header>
+          <div class="card-content">
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Avatar</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= form.file_field :avatar %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">E-mail</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= form.text_field :email, class:'input' %>
+                    </div>
+                    <p class="help">Your e-mail is required</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Password</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= form.password_field :password, class:'input' %>
+                    </div>
+                    <p class="help">Your password is required</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Password Confirmation</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <%= form.password_field :password_confirmation, class:'input' %>
+                    </div>
+                    <p class="help">Confirm your password</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                    <button type="submit" class="button is-primary">
+                      <span>Create new user</span>
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+<% end %>

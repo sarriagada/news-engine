@@ -14,8 +14,8 @@
         <% end %>
       </li>
       <li>
-        <%= link_to admin_articles_path, class:"router-link-active has-icon #{'is-active' if current_page?(controller: :articles)}" do %>
-          <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+        <%= link_to admin_articles_path, class:"router-link-active has-icon #{'is-active' if current_page?(admin_articles_path)}" do %>
+          <span class="icon"><i class="mdi mdi-newspaper"></i></span>
           <span class="menu-item-label">Articles</span>
         <%end%>
       </li>

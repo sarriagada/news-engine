@@ -11,7 +11,7 @@ background: #FFFFFF;
 border-radius: 19px;
 }
 
-h1{
+.main-title{
 height: 21px;
 margin-top: 26px;
 font-family: 'Roboto', sans-serif;
@@ -20,7 +20,6 @@ font-weight: 700;
 font-size: 18px;
 line-height: 21px;
 color: #0768B5;
-
 }
 
 .title{
@@ -43,11 +42,11 @@ line-height: 16px;
 color: #787A8D;
 }
 
-.image{
+.small-image{
 width: 36px;
 }
 
-.button{
+.pill{
 height: 30px;
 background: #FFFFFF;
 border: 0.2px solid #FFFFFF;
@@ -56,7 +55,7 @@ margin-right: 19px;
 margin-top: 10px;
 }
 
-.button:hover{
+.pill:hover{
 background-color: #2F9FF8;
 color: #ffffff;
 transition: 0.5s;
@@ -198,10 +197,50 @@ line-height: 20px;
 color: #1E1F4B;
 }
 
-.control-me {
-  display: none;
+#alert {
+  color: red;
 }
 
-#toggle:checked ~ .control-me {
-  display: block;
+.big-card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: hsl(0deg, 0%, 29%);
+  max-width: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.big-title {
+  color: hsl(0deg, 0%, 21%);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.cardxl {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: hsl(0deg, 0%, 29%);
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+} 
+
+.b-table .table-wrapper.has-mobile-cards tr:not(.detail):not(.is-empty):not(.table-footer) td.is-image-cell .image {
+  padding: 0 !important;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: solid gray 1px;
+}
+
+
+th, td{
+  text-align: center !important;
+  vertical-align:middle !important;
 }

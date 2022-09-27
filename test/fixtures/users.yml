@@ -1,0 +1,7 @@
+admin: 
+  email: "admin@example.com"
+  crypted_password: "12345678"
+
+test:
+  email: "test@example.com"
+  crypted_password: "87654321"

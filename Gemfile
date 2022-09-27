@@ -46,14 +46,11 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri mingw x64_mingw]
-  gem "rspec-rails"
-  gem "factory_bot_rails"
-  gem "faker"
 end
 
 group :development do
@@ -82,3 +79,7 @@ gem "rubocop-performance", require: false
 gem "rubocop-rspec", require: false
 
 gem "simplecov", require: false, group: :test
+
+gem "sorcery", "~> 0.16.3"
+
+gem "htmlbeautifier", "~> 1.4"

@@ -64,6 +64,15 @@
             </div>
           </div>
           <hr>
+          <div class="field-body">
+            <div class="control">
+              <%= form.file_field :picture %>
+            </div>
+            <div class="field">
+              <%= form.label :body %>
+              <%= form.rich_text_area :body %>
+            </div>
+          </div>
           <div class="field is-horizontal">
             <div class="field-label">
               <!-- Left empty for spacing -->
