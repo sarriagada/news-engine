@@ -16,6 +16,11 @@ AllCops:
     - "app/views/**/*"
     - "config/environments/*"
     - "node_modules/**/*"
+    - "Rakefile"
+    - "**/*.rake"
+    - "test/**/*.rb"
+    - "spec/**/*.rb"
+
 
 # Metrics Cops
 

@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "users/index", type: :view do
   before(:each) do
@@ -6,14 +6,14 @@ RSpec.describe "users/index", type: :view do
       User.create!(
         email: "Email",
         crypted_password: "Crypted Password",
-        salt: "Salt"
+        salt: "Salt",
       ),
       User.create!(
         email: "Email",
         crypted_password: "Crypted Password",
-        salt: "Salt"
-      )
-    ])
+        salt: "Salt",
+      ),
+    ]),
   end
 
   it "renders a list of users" do

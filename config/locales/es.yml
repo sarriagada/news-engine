@@ -10,3 +10,24 @@ es:
           destroyed: 'Articulo eliminado exitosamente'
 
 
+es:
+  common:  
+    user:
+      create:
+        created: 'Usuario creado exitosamente'
+      update:
+        updated: 'Usuario actualizado exitosamente'
+      destroy:
+        destroyed: 'Usuario destruido exitosamente'
+
+
+es:
+  common:
+    login:
+      alert: 'Please login first'
+
+es:
+  common:
+    user:
+      session: 'Logged out'
+

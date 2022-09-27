@@ -1,11 +1,11 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "users/show", type: :view do
   before(:each) do
     @user = assign(:user, User.create!(
       email: "Email",
       crypted_password: "Crypted Password",
-      salt: "Salt"
+      salt: "Salt",
     ))
   end
 

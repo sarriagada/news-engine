@@ -5,13 +5,13 @@ class UserSessionsController < ApplicationController
     if @user
       redirect_back_or_to(admin_root_path)
     else
-      flash.now[:alert] = 'Login failed'
-      render action: 'new', status: :unprocessable_entity
+      flash.now[:alert] = "Login failed"
+      render action: "new", status: :unprocessable_entity
     end
   end
 
   def destroy
     logout
-    redirect_to(:users, notice: 'Logged out!')
+    redirect_to(:users, notice: t(".session"))
   end
 end
