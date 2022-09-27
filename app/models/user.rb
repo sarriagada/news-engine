@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true
 
   has_one_attached :avatar
+  
 end

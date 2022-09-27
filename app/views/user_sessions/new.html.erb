@@ -1,17 +1,17 @@
 <%= form_with url: login_path, method: :post do |f| %>
-<section class="hero is-hero-bar">  
-  <div class="hero-body">
-    <div class="level">
-      <div class="level-left">
-        <div class="level-item"><h1 class="big-title">Sign In</h1></div>
-      </div>
-      <div class="level-right" style="display: none;">
-        <div class="level-item"></div>
+<section class="is-title-bar">
+  <section class="hero is-hero-bar">  
+    <div class="hero-body">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item"><h1 class="big-title">Sign In</h1></div>
+        </div>
+        <div class="level-right" style="display: none;">
+          <div class="level-item"></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<div id="app">
+  </section>
   <section class="section is-main-section">
     <div class="tile is-ancestor">
       <div class="tile is-parent is-flex is-justify-content-center">
@@ -67,8 +67,6 @@
       </div>
     </div>
   </section>
-  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+</section> 
 <% end %>
-
-
 <%= link_to 'Back', users_path %>

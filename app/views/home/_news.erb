@@ -14,7 +14,7 @@
               </div>
               <div class="column is-narrow">
                 <div class="card-image">
-                <%= image_tag 'battlegrounds.svg'%>
+                  <%= image_tag(article.picture.attached? ? article.picture : 'battlegrounds.svg') %>
                 </div>
               </div>
             </div>

@@ -1,13 +1,23 @@
 require "test_helper"
+require "simplecov"
 
 class ArticlesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    before_action :each do
+    @user = User.create!(email: "admin@example.com", crypted_password: "12345678")
+    
     @article = articles(:one)
+  end
+
+  test "should show user" do
+    login_user
+    admin_root_path
+    assert_response :success
   end
 
   test "should redirect if not logged in" do 
     get admin_root_path
-    assert_redirected_to login_path
+    assert_response :redirect
   end
 
   test "should get new" do
@@ -42,7 +52,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     assert_difference("Article.count", -1) do
       delete admin_article_url(@article)
     end
-
     assert_redirected_to admin_articles_url
+    end
   end
 end

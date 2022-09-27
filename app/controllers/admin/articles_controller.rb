@@ -64,6 +64,6 @@ class Admin::ArticlesController < AdminController
 
   # Only allow a list of trusted parameters through.
   def article_params
-    params.require(:article).permit(:title, :body, :source, :featured)
+    params.require(:article).permit(:title, :body, :source, :featured, :picture, :action_text_rich_texts)
   end
 end

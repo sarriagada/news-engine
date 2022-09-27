@@ -11,7 +11,7 @@ background: #FFFFFF;
 border-radius: 19px;
 }
 
-h1{
+.main-title{
 height: 21px;
 margin-top: 26px;
 font-family: 'Roboto', sans-serif;
@@ -20,7 +20,6 @@ font-weight: 700;
 font-size: 18px;
 line-height: 21px;
 color: #0768B5;
-
 }
 
 .title{
@@ -230,4 +229,18 @@ color: #1E1F4B;
   position: relative;
   margin-right: auto;
   margin-left: auto;
+} 
+
+.b-table .table-wrapper.has-mobile-cards tr:not(.detail):not(.is-empty):not(.table-footer) td.is-image-cell .image {
+  padding: 0 !important;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: solid gray 1px;
+}
+
+
+th, td{
+  text-align: center !important;
+  vertical-align:middle !important;
 }
