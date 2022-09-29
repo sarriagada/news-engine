@@ -8,4 +8,6 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   has_one_attached :avatar
+
+  enum role: [:editor, :admin]
 end
