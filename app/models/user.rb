@@ -8,4 +8,12 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   has_one_attached :avatar
+
+  enum role: [:editor, :admin]
+
+  after_initialize :set_default_role, if :new_record?
+  def set_default_role
+    self.role ||= :editor
+  end   
+end
 end

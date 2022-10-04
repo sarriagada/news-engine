@@ -19,3 +19,12 @@ en:
       destroy:
         destroyed: 'Usuario destruido exitosamente'
   
+es:
+  common:
+    login:
+      alert: 'Please login first'
+
+es:
+  common:
+    user:
+      session: 'Logged out'

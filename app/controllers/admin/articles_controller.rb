@@ -2,7 +2,7 @@ class Admin::ArticlesController < AdminController
   before_action :set_article, only: %i[show edit update destroy]
 
   # GET /articles or /articles.json
-  def index
+  def index 
     @articles = Article.all
   end
 
