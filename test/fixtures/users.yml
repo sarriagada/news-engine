@@ -1,7 +1,9 @@
 admin: 
   email: "admin@example.com"
   crypted_password: "12345678"
+  role: "admin" 
 
-test:
-  email: "test@example.com"
+editor:
+  email: "editor@example.com"
   crypted_password: "87654321"
+  role: "editor"

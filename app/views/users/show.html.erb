@@ -27,7 +27,7 @@
             </header>
             <div class="card-content">
               <div class="is-user-avatar image has-max-width is-aligned-center">
-                <%= image_tag(@user.avatar) if @user.avatar.attached? %>
+                <%= image_tag(@user.avatar.attached? ? @user.avatar : 'battlegrounds.svg', class: 'is-rounded') %>
               </div>
               <hr>
               <div class="field">

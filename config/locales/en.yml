@@ -19,3 +19,19 @@ en:
       destroy:
         destroyed: 'Usuario destruido exitosamente'
   
+es:
+  common:
+    login:
+      alert: 'Please login first'
+
+es:
+  common:
+    user:
+      session: 'Logged out'
+
+
+en:
+  admin:
+    admin:
+      alert: "You are not authorized to perform this action."
+        

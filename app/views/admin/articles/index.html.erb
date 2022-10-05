@@ -5,15 +5,17 @@
         <div class="level-left">
           <div class="level-item"><h1 class="title">Articles</h1></div>
         </div>
-        <div class="level-right">
-          <div class="level-item">
-          <div class="buttons is-right">
-            <button class="button is-primary" type="button">
-            <span class="icon"><i class="mdi mdi-plus-thick"></i></span>
-            <%= link_to "New User", new_admin_article_path(@article), class: "has-text-white"  %>
+        <% if policy(Article).new? %>
+          <div class="level-right">
+            <div class="level-item">
+              <div class="buttons is-right">
+                <button class="button is-primary" type="button">
+                <span class="icon"><i class="mdi mdi-plus-thick"></i></span>
+                <%= link_to "New Article", new_admin_article_path(@article), class: "has-text-white"  %>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        <% end %>
     </div>
   </section>
   <section class="section is-main-section">
@@ -103,7 +105,3 @@
     </div>
   </section>
 </section>
-
-
-
-

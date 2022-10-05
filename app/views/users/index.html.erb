@@ -52,11 +52,11 @@
                       </td>
                       <td class="is-image-cell">
                         <div class="image">
-                          <%= image_tag(user.avatar, class: 'is-rounded') %>
+                          <%= image_tag(user.avatar.attached? ? user.avatar : 'battlegrounds.svg', class: 'is-rounded') %>
                         </div>
                       </td>
                       <td data-label="E-mail"><%= user.email %></td>
-                      <td data-label="E-mail">User role</td>
+                      <td data-label="E-mail"><%= user.role %></td>
                       <td data-label="Created">
                         <small class="has-text-grey is-abbr-like" title="Oct 25, 2020"><%= Time.zone.now.to_formatted_s(:short) %></small>
                       </td>
