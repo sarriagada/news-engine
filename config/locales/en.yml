@@ -28,3 +28,10 @@ es:
   common:
     user:
       session: 'Logged out'
+
+
+en:
+  admin:
+    admin:
+      alert: "You are not authorized to perform this action."
+        

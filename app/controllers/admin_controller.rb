@@ -6,10 +6,7 @@ class AdminController < ApplicationController
   def index; end
 
   def user_not_authorized
-    flash[:alert] = "You are not authorized to perform this action."
+    flash[:alert] = t(".alert")
     redirect_back(fallback_location: root_path)
   end
-
 end
-
-
