@@ -24,10 +24,12 @@ es:
     login:
       alert: 'Please login first'
 
-es:
+en:
   common:
-    user:
-      session: 'Logged out'
+    users:
+      session:
+        destroy:
+          destroyed: 'Logged out'
 
 
 en:
